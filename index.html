@@ -21,10 +21,39 @@
             padding: 0;
             margin: 0;
         }
+	/* Header styling */
+        header {
+            background-color: #649566; /* Green background */
+            color: white;
+            text-align: center;
+            padding: 5px 0;
+            font-size: 14px;
+            position: absolute;
+            top: 0;
+            z-index: 500;
+            width: 100%;
+            box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 14px;
+        }	
         </style>
         <title></title>
     </head>
 	 <body>
+	 <header style="background-color: #000000; color: #ffffff; padding: 20px 0; font-family: 'Arial', sans-serif; display: flex; align-items: center; justify-content: center; position: relative;">
+        <h1 style="margin: 0; font-size: 28px; font-weight: bold; color: #ffffff;">Lalbaug-Vaishnavi Karwa</h1>
+        <nav style="position: absolute; right: 20px; font-size: 14px; font-family: 'Arial', sans-serif;">
+            <a href="#morphology_map" style="color: #ffffff; text-decoration: none;">Morphology Map</a>
+        </nav>
+    </header>
         <div id="map">
         </div>
         <script src="js/qgis2web_expressions.js"></script>
